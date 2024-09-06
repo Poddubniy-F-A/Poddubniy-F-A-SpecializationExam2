@@ -40,7 +40,7 @@ CREATE TABLE `Animals` (
 
 LOCK TABLES `Animals` WRITE;
 /*!40000 ALTER TABLE `Animals` DISABLE KEYS */;
-INSERT INTO `Animals` VALUES (1,'Buddy','Bark, Sit, Come, Stop','2020-03-20',1),(2,'Whiskers','Sit, Pounce','2019-05-15',2),(3,'Hammy','Roll, Hide','2021-03-10',3),(4,'Fido','Sit, Stay, Fetch','2020-01-01',1),(5,'Smudge','Sit, Pounce, Scratch','2020-02-20',2),(6,'Peanut','Roll, Spin','2021-08-01',3),(7,'Bella','Sit, Stay, Roll','2019-11-11',1),(8,'Thunder','Trot, Canter, Gallop','2015-07-21',5),(9,'Sandy','Walk, Carry, Load','2016-11-03',6),(10,'Eeyore','Walk, Carry, Load, Bray','2017-09-18',4),(11,'Oliver','Meow, Scratch, Jump','2020-06-30',2),(12,'Storm','Trot, Canter','2014-05-05',5),(13,'Dune','Walk, Sit','2018-12-12',6),(14,'Burro','Walk, Bray, Kick','2019-01-23',4),(15,'Blaze','Trot, Jump, Gallop','2016-02-29',5),(16,'Sahara','Walk, Run','2015-08-14',6);
+INSERT INTO `Animals` VALUES (1,'Buddy','Bark, Sit, Come, Stop','2020-03-20',1),(2,'Whiskers','Sit, Pounce','2019-05-15',2),(3,'Hammy','Roll, Hide','2021-03-10',3),(4,'Fido','Sit, Stay, Fetch','2020-01-01',1),(5,'Smudge','Sit, Pounce, Scratch','2020-02-20',2),(6,'Peanut','Roll, Spin','2021-08-01',3),(7,'Bella','Sit, Stay, Roll','2019-11-11',1),(8,'Thunder','Trot, Canter, Gallop','2015-07-21',5),(10,'Eeyore','Walk, Carry, Load, Bray','2017-09-18',4),(11,'Oliver','Meow, Scratch, Jump','2020-06-30',2),(12,'Storm','Trot, Canter','2014-05-05',5),(14,'Burro','Walk, Bray, Kick','2019-01-23',4),(15,'Blaze','Trot, Jump, Gallop','2016-02-29',5);
 /*!40000 ALTER TABLE `Animals` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -104,4 +104,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-05 21:36:25
+-- Dump completed on 2024-09-06 19:39:46

@@ -1,0 +1,19 @@
+ 1222  mkdir exam
+ 1223  cd exam
+ 1224  cat >> 'Pack animals.txt'
+ 1225  cat >> 'Pets.txt'
+ 1228  cat 'Pets.txt' 'Pack animals.txt' > 'Human friends.txt'
+ 1229  mkdir newdir
+ 1230  mv 'Human friends.txt' newdir/
+ 1231  git init
+ 1233  git add 'Pets.txt' 'Pack animals.txt' ./newdir/'Human friends.txt' 
+ 1234  git commit -m "initial commit"
+ 1235  git branch -M main
+ 1236  git remote add origin https://github.com/Poddubniy-F-A/SpecializationExam2.git
+ 1237  git push -u origin main
+ 1247  sudo apt-get update
+ 1255  sudo apt install mysql-server
+ 1256  sudo apt autoremove
+ 1269  sudo dpkg -i code_1.91.1-1720564633_amd64.deb
+ 1276  sudo dpkg -r code
+ 1277  history

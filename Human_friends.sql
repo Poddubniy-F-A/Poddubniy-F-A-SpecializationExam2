@@ -94,6 +94,33 @@ LOCK TABLES `Animals_types` WRITE;
 INSERT INTO `Animals_types` VALUES (1,'Pets'),(2,'Pack animals');
 /*!40000 ALTER TABLE `Animals_types` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `Young_animals`
+--
+
+DROP TABLE IF EXISTS `Young_animals`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Young_animals` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `age` varchar(50) DEFAULT NULL,
+  `animal_id` int DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `animal_id` (`animal_id`),
+  CONSTRAINT `Young_animals_ibfk_1` FOREIGN KEY (`animal_id`) REFERENCES `Animals` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Young_animals`
+--
+
+LOCK TABLES `Young_animals` WRITE;
+/*!40000 ALTER TABLE `Young_animals` DISABLE KEYS */;
+INSERT INTO `Young_animals` VALUES (1,'02 years 06 months',1),(2,'01 years 06 months',3),(3,'02 years 09 months',4),(4,'02 years 07 months',5),(5,'01 years 02 months',6),(6,'02 years 10 months',7),(7,'02 years 03 months',11);
+/*!40000 ALTER TABLE `Young_animals` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -104,4 +131,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-09-06 19:39:46
+-- Dump completed on 2024-09-06 23:23:58
